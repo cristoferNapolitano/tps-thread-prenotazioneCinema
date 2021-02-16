@@ -1,0 +1,28 @@
+﻿<Window x:Class="tps_es_concorrenza_prentotazioneCinema.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tps_es_concorrenza_prentotazioneCinema"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="836.569" Width="1303.055">
+    <Grid HorizontalAlignment="Left" Width="1293">
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="603" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="894"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="59" Margin="35,42,0,0" Stroke="Black" VerticalAlignment="Top" Width="810"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="59" Margin="35,201,0,0" Stroke="Black" VerticalAlignment="Top" Width="810"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="59" Margin="35,121,0,0" Stroke="Black" VerticalAlignment="Top" Width="810"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="59" Margin="35,361,0,0" Stroke="Black" VerticalAlignment="Top" Width="810"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="59" Margin="35,280,0,0" Stroke="Black" VerticalAlignment="Top" Width="810"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="59" Margin="35,439,0,0" Stroke="Black" VerticalAlignment="Top" Width="810"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="59" Margin="35,519,0,0" Stroke="Black" VerticalAlignment="Top" Width="810"/>
+        <Button x:Name="btnSvuotaCinema" Content="Svuota la sala" HorizontalAlignment="Left" Height="90" Margin="60,663,0,0" VerticalAlignment="Top" Width="297" FontSize="14"/>
+        <Button x:Name="btnTest" Content="Test Riempimento" HorizontalAlignment="Left" Height="90" Margin="426,663,0,0" VerticalAlignment="Top" Width="316" FontSize="14"/>
+        <Button x:Name="btnAssegnaPosto" Content="Assegna" HorizontalAlignment="Left" Margin="1161,42,0,0" VerticalAlignment="Top" Width="114" Height="59"/>
+        <TextBox x:Name="txtThread1" HorizontalAlignment="Left" Height="59" Margin="928,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78"/>
+        <Label Content="inserisci i posti da segnare" HorizontalAlignment="Left" Height="32" Margin="928,10,0,0" VerticalAlignment="Top" Width="228" FontSize="14"/>
+        <TextBox x:Name="txtThread2" HorizontalAlignment="Left" Height="59" Margin="1035,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78"/>
+        <TextBlock x:Name="txtConsole" HorizontalAlignment="Left" Height="334" Margin="928,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="347"/>
+        <TextBlock HorizontalAlignment="Left" Height="81" Margin="928,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="323" Foreground="Black" FontSize="17" FontFamily="Arial"><Span><Run Text="lo spazio sottostante conterrà i processi che avvengono quando si preme il pulsante test"/></Span></TextBlock>
+
+    </Grid>
+</Window>

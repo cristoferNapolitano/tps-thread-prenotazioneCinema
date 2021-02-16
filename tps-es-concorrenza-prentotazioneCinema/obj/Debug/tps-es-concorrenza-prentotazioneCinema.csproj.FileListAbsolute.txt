@@ -1,0 +1,15 @@
+C:\Users\cristo\OneDrive\Desktop\scuola\tps-es-concorrenza-prentotazioneCinema\tps-es-concorrenza-prentotazioneCinema\bin\Debug\tps-es-concorrenza-prentotazioneCinema.exe.config
+C:\Users\cristo\OneDrive\Desktop\scuola\tps-es-concorrenza-prentotazioneCinema\tps-es-concorrenza-prentotazioneCinema\bin\Debug\tps-es-concorrenza-prentotazioneCinema.exe
+C:\Users\cristo\OneDrive\Desktop\scuola\tps-es-concorrenza-prentotazioneCinema\tps-es-concorrenza-prentotazioneCinema\bin\Debug\tps-es-concorrenza-prentotazioneCinema.pdb
+C:\Users\cristo\OneDrive\Desktop\scuola\tps-es-concorrenza-prentotazioneCinema\tps-es-concorrenza-prentotazioneCinema\obj\Debug\tps-es-concorrenza-prentotazioneCinema.csprojAssemblyReference.cache
+C:\Users\cristo\OneDrive\Desktop\scuola\tps-es-concorrenza-prentotazioneCinema\tps-es-concorrenza-prentotazioneCinema\obj\Debug\MainWindow.g.cs
+C:\Users\cristo\OneDrive\Desktop\scuola\tps-es-concorrenza-prentotazioneCinema\tps-es-concorrenza-prentotazioneCinema\obj\Debug\App.g.cs
+C:\Users\cristo\OneDrive\Desktop\scuola\tps-es-concorrenza-prentotazioneCinema\tps-es-concorrenza-prentotazioneCinema\obj\Debug\tps-es-concorrenza-prentotazioneCinema_MarkupCompile.cache
+C:\Users\cristo\OneDrive\Desktop\scuola\tps-es-concorrenza-prentotazioneCinema\tps-es-concorrenza-prentotazioneCinema\obj\Debug\tps-es-concorrenza-prentotazioneCinema_MarkupCompile.lref
+C:\Users\cristo\OneDrive\Desktop\scuola\tps-es-concorrenza-prentotazioneCinema\tps-es-concorrenza-prentotazioneCinema\obj\Debug\MainWindow.baml
+C:\Users\cristo\OneDrive\Desktop\scuola\tps-es-concorrenza-prentotazioneCinema\tps-es-concorrenza-prentotazioneCinema\obj\Debug\tps-es-concorrenza-prentotazioneCinema.g.resources
+C:\Users\cristo\OneDrive\Desktop\scuola\tps-es-concorrenza-prentotazioneCinema\tps-es-concorrenza-prentotazioneCinema\obj\Debug\tps_es_concorrenza_prentotazioneCinema.Properties.Resources.resources
+C:\Users\cristo\OneDrive\Desktop\scuola\tps-es-concorrenza-prentotazioneCinema\tps-es-concorrenza-prentotazioneCinema\obj\Debug\tps-es-concorrenza-prentotazioneCinema.csproj.GenerateResource.cache
+C:\Users\cristo\OneDrive\Desktop\scuola\tps-es-concorrenza-prentotazioneCinema\tps-es-concorrenza-prentotazioneCinema\obj\Debug\tps-es-concorrenza-prentotazioneCinema.csproj.CoreCompileInputs.cache
+C:\Users\cristo\OneDrive\Desktop\scuola\tps-es-concorrenza-prentotazioneCinema\tps-es-concorrenza-prentotazioneCinema\obj\Debug\tps-es-concorrenza-prentotazioneCinema.exe
+C:\Users\cristo\OneDrive\Desktop\scuola\tps-es-concorrenza-prentotazioneCinema\tps-es-concorrenza-prentotazioneCinema\obj\Debug\tps-es-concorrenza-prentotazioneCinema.pdb

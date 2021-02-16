@@ -1,0 +1,9 @@
+﻿<Application x:Class="tps_es_concorrenza_prentotazioneCinema.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:tps_es_concorrenza_prentotazioneCinema"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
