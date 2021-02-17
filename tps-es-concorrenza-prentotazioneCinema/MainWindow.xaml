@@ -15,9 +15,9 @@
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="59" Margin="35,280,0,0" Stroke="Black" VerticalAlignment="Top" Width="782"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="59" Margin="35,439,0,0" Stroke="Black" VerticalAlignment="Top" Width="782"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="59" Margin="35,519,0,0" Stroke="Black" VerticalAlignment="Top" Width="782"/>
-        <Button x:Name="btnSvuotaCinema" Content="Svuota la sala" HorizontalAlignment="Left" Height="90" Margin="60,663,0,0" VerticalAlignment="Top" Width="297" FontSize="14"/>
-        <Button x:Name="btnTest" Content="Test Riempimento" HorizontalAlignment="Left" Height="90" Margin="426,663,0,0" VerticalAlignment="Top" Width="316" FontSize="14"/>
-        <Button x:Name="btnAssegnaPosto" Content="Assegna" HorizontalAlignment="Left" Margin="1161,42,0,0" VerticalAlignment="Top" Width="114" Height="59"/>
+        <Button x:Name="btnSvuotaCinema" Content="Svuota la sala" HorizontalAlignment="Left" Height="90" Margin="60,663,0,0" VerticalAlignment="Top" Width="297" FontSize="14" Click="btnSvuotaCinema_Click"/>
+        <Button x:Name="btnTest" Content="Test Riempimento" HorizontalAlignment="Left" Height="90" Margin="426,663,0,0" VerticalAlignment="Top" Width="316" FontSize="14" Click="btnTest_Click"/>
+        <Button x:Name="btnAssegnaPosto" Content="Assegna" HorizontalAlignment="Left" Margin="1161,42,0,0" VerticalAlignment="Top" Width="114" Height="59" Click="btnAssegnaPosto_Click"/>
         <TextBox x:Name="txtThread1" HorizontalAlignment="Left" Height="59" Margin="928,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78"/>
         <Label Content="inserisci i posti da segnare" HorizontalAlignment="Left" Height="32" Margin="928,10,0,0" VerticalAlignment="Top" Width="228" FontSize="14"/>
         <TextBox x:Name="txtThread2" HorizontalAlignment="Left" Height="59" Margin="1035,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78"/>
