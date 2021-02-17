@@ -21,10 +21,13 @@ namespace tps_es_concorrenza_prentotazioneCinema
     /// </summary>
     public partial class MainWindow : Window
     {
-        private bool[] postiLiberi;  //posto libero== true //posto occupato==false
-        private delegate void thread1(int i);
+        private static bool[] postiLiberi;  //posto libero== true //posto occupato==false
         private static object x = new object();
-        private static Semaphore semaphore;
+        Random rnd = new Random();
+
+        Thread t1 = new Thread(new ParameterizedThreadStart(OccupaPosto));
+        Thread t2 = new Thread(new ParameterizedThreadStart(OccupaPosto));
+
 
         public MainWindow()
         {
@@ -40,9 +43,10 @@ namespace tps_es_concorrenza_prentotazioneCinema
             {
                 postiLiberi[i] = true;
             }
+            //ricorda riprinistino dei posti nell'interfaccia grafica
         }
         
-        void OccupaPostoGrafica(int i)
+        static void OccupaPostoGrafica(int i)
         {
             
         }
@@ -72,42 +76,36 @@ namespace tps_es_concorrenza_prentotazioneCinema
                 if (posto2 <= 0 || posto2 >= 119)
                     throw new Exception("il posto inserito nella seconda casella non esiste");
 
-                Thread t1 = new Thread(new ParameterizedThreadStart(OccupaPosto));
-                Thread t2 = new Thread(new ParameterizedThreadStart(OccupaPosto));
-                semaphore = new Semaphore(0, 1);
+                
+
                 t1.Start(posto1);
                 t2.Start(posto2);
-                
-                semaphore.Release(1);
             }
             catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-        void OccupaPosto(object i)
+        static void OccupaPosto(object i)
         {
-            try
-            {
-                lock (x)
+            lock (x)
+            { 
+                try
                 {
-                    semaphore.WaitOne();
-                    int num =(int) i;
-                    
+
+                    int num = (int)i;
+
 
                     if (postiLiberi[num] != true)
                         throw new Exception("posto già occupato");
 
-                    postiLiberi[num] = false;
+                    postiLiberi[num] = false;  //occupo il posto
                     OccupaPostoGrafica(num);
-
-                    semaphore.Release();
                 }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
 
         }
