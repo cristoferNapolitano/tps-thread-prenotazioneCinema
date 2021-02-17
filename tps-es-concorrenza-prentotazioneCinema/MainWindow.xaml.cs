@@ -41,65 +41,7 @@ namespace tps_es_concorrenza_prentotazioneCinema
                 postiLiberi[i] = true;
             }
         }
-
-        void OccupaPostoThread1()
-        {
-            try
-            {
-                lock (x)
-                {
-                    semaphore.WaitOne();
-
-                    int posto1 = int.Parse(txtThread1.Text) - 1;
-                    if (posto1 <= 0 || posto1 >= 119)
-                        throw new Exception("il posto inserito nella prima casella non esiste");
-
-                    if (postiLiberi[posto1] != true)
-                        throw new Exception("posto già occupato . current thread: "+Thread.CurrentThread);
-
-                    postiLiberi[posto1] = false;
-                    OccupaPostoGrafica(posto1);
-
-                    semaphore.Release();
-                }
-                
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            
-        }
-        void OccupaPostoThread2()
-        {
-            try
-            {
-                lock (x)
-                {
-                    semaphore.WaitOne();
-
-                    int posto2 = int.Parse(txtThread2.Text) - 1;
-                    if (posto2 <= 0 || posto2 >= 119)
-                        throw new Exception("il posto inserito nella seconda casella non esiste");
-
-
-                    if (postiLiberi[posto2] != true)
-                        throw new Exception("posto già occupato . current thread: " + Thread.CurrentThread);
-
-                    postiLiberi[posto2] = false;
-                    OccupaPostoGrafica(posto2);
-
-                    semaphore.Release();
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-        }
-
+        
         void OccupaPostoGrafica(int i)
         {
             
@@ -117,21 +59,57 @@ namespace tps_es_concorrenza_prentotazioneCinema
 
         private void btnAssegnaPosto_Click(object sender, RoutedEventArgs e)
         {
+            int posto1, posto2;
             try
             {
-                Thread t1 = new Thread(new ThreadStart(OccupaPostoThread1));
-                Thread t2 = new Thread(new ThreadStart(OccupaPostoThread2));
+                posto1 = int.Parse(txtThread1.Text);
+                posto1--;
+                if (posto1 <= 0 || posto1 >= 119)
+                    throw new Exception("il posto inserito nella prima casella non esiste");
+
+                posto2 = int.Parse(txtThread2.Text);
+                posto2--;
+                if (posto2 <= 0 || posto2 >= 119)
+                    throw new Exception("il posto inserito nella seconda casella non esiste");
+
+                Thread t1 = new Thread(new ParameterizedThreadStart(OccupaPosto));
+                Thread t2 = new Thread(new ParameterizedThreadStart(OccupaPosto));
                 semaphore = new Semaphore(0, 1);
-
-                t1.Start();
-                t2.Start();
-
+                t1.Start(posto1);
+                t2.Start(posto2);
+                
                 semaphore.Release(1);
             }
             catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        void OccupaPosto(object i)
+        {
+            try
+            {
+                lock (x)
+                {
+                    semaphore.WaitOne();
+                    int num =(int) i;
+                    
+
+                    if (postiLiberi[num] != true)
+                        throw new Exception("posto già occupato");
+
+                    postiLiberi[num] = false;
+                    OccupaPostoGrafica(num);
+
+                    semaphore.Release();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
     }
 }

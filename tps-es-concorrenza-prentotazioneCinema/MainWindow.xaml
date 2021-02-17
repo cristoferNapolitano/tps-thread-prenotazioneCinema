@@ -21,8 +21,6 @@
         <TextBox x:Name="txtThread1" HorizontalAlignment="Left" Height="59" Margin="928,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78"/>
         <Label Content="inserisci i posti da segnare" HorizontalAlignment="Left" Height="32" Margin="928,10,0,0" VerticalAlignment="Top" Width="228" FontSize="14"/>
         <TextBox x:Name="txtThread2" HorizontalAlignment="Left" Height="59" Margin="1035,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78"/>
-        <TextBlock x:Name="txtConsole" HorizontalAlignment="Left" Height="334" Margin="891,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="384"/>
-        <TextBlock HorizontalAlignment="Left" Height="81" Margin="891,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="323" Foreground="Black" FontSize="17" FontFamily="Arial"><Span><Run Text="lo spazio sottostante conterrà i processi che avvengono quando si preme il pulsante test"/></Span></TextBlock>
         <Image x:Name="s4" Source="sediaCinema.png" HorizontalAlignment="Left" Height="59" Margin="173,42,0,0" VerticalAlignment="Top" Width="46"/>
         <Image x:Name="s3" Source="sediaCinema.png" HorizontalAlignment="Left" Height="59" Margin="127,42,0,0" VerticalAlignment="Top" Width="46"/>
         <Image x:Name="s2" Source="sediaCinema.png" HorizontalAlignment="Left" Height="59" Margin="81,42,0,0" VerticalAlignment="Top" Width="46"/>
