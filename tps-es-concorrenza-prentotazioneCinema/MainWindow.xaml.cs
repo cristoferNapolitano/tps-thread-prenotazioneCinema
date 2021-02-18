@@ -58,10 +58,35 @@ namespace tps_es_concorrenza_prentotazioneCinema
 
         private void btnTest_Click(object sender, RoutedEventArgs e)
         {
+            bool finito = false;
+            while (finito==false)
+            {
+                try
+                {
+                    int f = rnd.Next(120); int g = rnd.Next(120);
 
+                    t1.Start(rnd.Next(f));
+                    t2.Start(rnd.Next(g));
+                }
+                catch(Exception)
+                {
+
+                }
+
+                finito = true;
+                for (int i = 0; i < postiLiberi.Length; i++)
+                {
+                    if (postiLiberi[i] == true)
+                    {
+                        finito = false;
+                        break;
+                    }
+                    
+                }
+            }
         }
 
-        private void btnAssegnaPosto_Click(object sender, RoutedEventArgs e)
+        private void btnAssegnaPosto_Click(object sender, RoutedEventArgs e)  //quando assegno i posti lo faccio 2 alla volta
         {
             int posto1, posto2;
             try
