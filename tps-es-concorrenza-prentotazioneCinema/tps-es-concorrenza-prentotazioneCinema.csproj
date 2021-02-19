@@ -97,5 +97,8 @@
   <ItemGroup>
     <Resource Include="sediaCinema.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WIN_20200825_16_24_07_Pro.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

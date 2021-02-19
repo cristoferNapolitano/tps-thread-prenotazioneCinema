@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sediacinema.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("win_20200825_16_24_07_pro.jpg")]
 
 
