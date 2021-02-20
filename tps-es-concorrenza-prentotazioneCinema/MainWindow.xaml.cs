@@ -143,11 +143,6 @@ namespace tps_es_concorrenza_prentotazioneCinema
                 t1.Start(posto1);
                 t2.Start(posto2);
                 
-                
-
-                txtThread1.Text = ""; //ripristino il testo
-                txtThread2.Text = "";
-
                 OccupaPostoGrafica(posto1); //dato che il thread sembra non posso modificare lo stato nella interfaccia grafica
                 OccupaPostoGrafica(posto2); //lo faccio fare dopo l'esecuzione del thread
             }
@@ -155,6 +150,9 @@ namespace tps_es_concorrenza_prentotazioneCinema
             {
                 MessageBox.Show(ex.Message);
             }
+
+            txtThread1.Text = ""; //ripristino il testo
+            txtThread2.Text = "";
         }
         void OccupaPosto(object i) 
         {
